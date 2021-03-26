@@ -30,6 +30,7 @@ public class HttpRequestTest {
     public void testCuadradoPorDefecto() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/cuadrado",
                 String.class)).containsPattern("El cuadrado de 0[\\.,]000000 es 0[\\.,]000000");
+                //try
     }
     
     @Test
